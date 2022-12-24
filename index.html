@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume</title>
+
+
+    <!-- bootstrap cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+
+
+    <link rel="stylesheet" href="style.css">
+
+
+<body>
+    <div class="container">
+        <form action="">
+            <h2 class="text-center">Resume generator</h2>
+            <p class="text-center ">make resume with santosh</p>
+            <div class="row">
+                <div class="col-md-6">
+                    <h6>Personal Information</h6>
+                    <div class="form-group">
+                        <label for="namefield">Your Name</label>
+                        <input class="form-control" type="text" id="namefield" placeholder="Enter Here">
+
+                        <label for="phone">Your Phone</label>
+                        <input type="text" id="phone" placeholder="Enter Here" class="form-control mt-2">
+                        <label for="address">Your address</label>
+                        <textarea type="text" id="address" placeholder="Your address" class="form-control mt-2 "
+                            rows="5"></textarea>
+                        <p class="text-secondary my-2">social media links</p>
+                        <label for="facefield">facebook</label>
+                        <input class="form-control" type="text" id="facefield" placeholder="Enter Here">
+
+                        <label for="instafield">instagram</label>
+                        <input class="form-control" type="text" id="instafield" placeholder="Enter Here">
+
+                        <label for="ytfield">youtube</label>
+                        <input class="form-control" type="text" id="ytfield" placeholder="Enter Here">
+
+                    </div>
+
+                </div>
+
+                <div class="col-md-6" id="we">
+                    <h6>Professional inforamtion</h6>
+                    <label for="objective">Work Experience</label>
+                    <textarea id="objective" rows="5" placeholder="Enter Here" class="form-control"></textarea>
+                    <div class="text-center" id="addbtn">
+                        <input type="button" value="add new" class="btn btn-outline-primary my-2 "
+                            onclick="addnewfield()">
+                    </div>
+
+
+                    <label for="academic">academic qualification</label>
+                    <textarea id="academic" rows="3" placeholder="Enter Here" class="form-control"></textarea>
+
+
+
+                    <div class="text-center" id="addaq">
+                        <input type="button" value="add new" class="btn btn-outline-primary my-2 "
+                            onclick="addnewaqfield()">
+                    </div>
+                </div>
+                <div class="text-center my-5"><button class="btn btn-primary btn-btn-lg" onclick="generatecv()">Make
+                        Resume</button></div>
+            </div>
+        </form>
+    </div>
+
+    <div class="container">
+        <div class="row">
+
+            <div class="col-md-4 text-center first-info">
+                <img src="../images/lady-img.jpg" class="img-fluid mt-4" alt="profile photo" style="border-radius:10%">
+                <p id="names">santosh kumar</p>
+                <address>jhimar colleiry anuppur mp</address>
+                <p><a href="">sainkee1997@gamil.com</a></p>
+                <P id="nums">YOUR PHONE NUMBER</P>
+                <hr>
+                <p><a href="" id="fbs">facebook link</a></p>
+                <p><a href="" id="igs">insta link</a></p>
+                <p><a href="" class="yts">yt link</a></p>
+
+            </div>
+
+            <div class="col-md-8">
+                <h3 id="names">santosh kumar</h3>
+
+                <div class="card-header first-info">work experience</div>
+                <div class="card-body" id="wes">Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa eos,
+                    distinctio aperiam voluptate fugit doloribus rerum dicta non. Quo at inventore mollitia, nihil
+                    quisquam, recusandae, magnam saepe officia deserunt sed doloremque ipsum commodi. Perferendis
+                    blanditiis vel non consectetur dolorum magnam quos, natus facilis! A quidem ad illum iste temporibus
+                    dolor.</div>
+
+                <div class="card-header first-info">qualification</div>
+                <div class="card-body">
+                    <ul>
+                        <li> matric</li>
+                        <li> intermediate</li>
+                        <li> graduation</li>
+                    </ul>
+
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+    <script src="scriipt.js"></script>
+</body>
+
+</html>
